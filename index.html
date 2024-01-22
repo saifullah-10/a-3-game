@@ -7,6 +7,14 @@
   <title>Document</title>
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .progress-ring__circle {
+
+      transition: stroke-dashoffset 0.35s;
+      transform: rotate(-90deg);
+      transform-origin: 50% 50%;
+    }
+  </style>
 </head>
 
 <body>
@@ -60,7 +68,7 @@
     <!-- carousel start -->
     <section>
       <div class="relative">
-        <div class="carousel w-full lg:h-[550px] h-[250px]">
+        <div class="carousel w-full lg:h-[550px] h-[250px] rounded-xl">
           <div id="slide1" class="carousel-item relative w-full">
             <img src="https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg"
               class="w-full object-cover bg-center " />
@@ -95,7 +103,7 @@
           </div>
         </div>
         <div
-          class="bg-black p-7 w-full lg:w-1/2 text-white absolute left-1/2 max-sm:mt-5 max-sm:-translate-x-1/2 lg:left-[48%] lg:top-[70%] rounded-xl ">
+          class="bg-black p-7 w-full lg:w-1/2 text-white relative lg:absolute left-1/2 max-sm:mt-5 max-sm:-translate-x-1/2 lg:left-[48%] lg:top-[70%] rounded-xl ">
           <h2>Meet all the heroes from the field</h2>
           <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit
             nullam proin. </p>
@@ -103,6 +111,81 @@
       </div>
     </section>
     <!-- carousel stop -->
+    <!-- performance start -->
+    <section class="mt-20">
+      <div>
+        <div>
+          <div>
+            <h1></h1>
+            <p></p>
+          </div>
+        </div>
+        <div class="w-4/5 mx-auto flex max-sm:flex-col justify-between gap-8"> <!-- container  -->
+          <div class="w-96 flex flex-col items-center justify-center">
+            <div class="relative w-40 h-40">
+              <svg class="w-full h-full" viewBox="0 0 100 100">
+                <circle class="text-gray-200 stroke-current" stroke-width="10" cx="50" cy="50" r="40" fill="transparent">
+                </circle>
+                <circle class=" text-[#ff4042] progress-ring__circle stroke-current "
+                  style="stroke-dasharray: calc(220 + (87 * 2.5)), 400" stroke-width="10" stroke-linecap="round" cx="50"
+                  cy="50" r="40" fill="transparent" stroke-dashoffset="calc(400 - (400 * 45) / 100)"></circle>
+                <text x="50" y="50" font-family="Verdana" font-size="12" text-anchor="middle" alignment-baseline="middle"
+                  style="--value:30">87%</text>
+              </svg>
+            </div>
+            <h2>Prayer Facility</h2>
+            <p class="text-center max-sm:w-3/4">Amet consectetur. Condimentum dignissim adipiscing .</p>
+          </div>
+          <div class="w-96 flex flex-col items-center justify-center">
+            <div class="relative w-40 h-40">
+              <svg class="w-full h-full" viewBox="0 0 100 100">
+                <circle class="text-gray-200 stroke-current" stroke-width="10" cx="50" cy="50" r="40" fill="transparent">
+                </circle>
+                <circle class=" text-[#49d293] progress-ring__circle stroke-current "
+                  style="stroke-dasharray: calc(220 + (95 * 2.5)), 400" stroke-width="10" stroke-linecap="round" cx="50"
+                  cy="50" r="40" fill="transparent" stroke-dashoffset="calc(400 - (400 * 45) / 100)"></circle>
+                <text x="50" y="50" font-family="Verdana" font-size="12" text-anchor="middle" alignment-baseline="middle"
+                  style="--value:30">95%</text>
+              </svg>
+            </div>
+            <h2>Experienced Coach</h2>
+            <p class="text-center max-sm:w-3/4">Amet consectetur. Condimentum dignissim adipiscing .</p>
+          </div>
+         <div class="w-96 flex flex-col items-center justify-center">
+          <div class="relative w-40 h-40">
+            <svg class="w-full h-full" viewBox="0 0 100 100">
+              <circle class="text-gray-200 stroke-current" stroke-width="10" cx="50" cy="50" r="40" fill="transparent">
+              </circle>
+              <circle class=" text-[#ffb546] progress-ring__circle stroke-current "
+                style="stroke-dasharray: calc(220 + (90 * 2.5)), 400" stroke-width="10" stroke-linecap="round" cx="50"
+                cy="50" r="40" fill="transparent" stroke-dashoffset="calc(400 - (400 * 45) / 100)"></circle>
+              <text x="50" y="50" font-family="Verdana" font-size="12" text-anchor="middle" alignment-baseline="middle"
+                style="--value:30">90%</text>
+            </svg>
+          </div>
+          <h2>Senior Player</h2>
+          <p class="text-center max-sm:w-3/4">Amet consectetur. Condimentum dignissim adipiscing .</p>
+         </div>
+         <div class="w-96 flex flex-col items-center justify-center">
+          <div class="relative w-40 h-40">
+            <svg class="w-full h-full" viewBox="0 0 100 100">
+              <circle class="text-gray-200 stroke-current" stroke-width="10" cx="50" cy="50" r="40" fill="transparent">
+              </circle>
+              <circle class=" text-[#4c8df1] progress-ring__circle stroke-current "
+                style="stroke-dasharray: calc(220 + (80 * 2.5)), 400" stroke-width="10" stroke-linecap="round" cx="50"
+                cy="50" r="40" fill="transparent" stroke-dashoffset="calc(400 - (400 * 45) / 100)"></circle>
+              <text x="50" y="50" font-family="Verdana" font-size="12" text-anchor="middle" alignment-baseline="middle"
+                style="--value:30">80%</text>
+            </svg>
+          </div>
+          <h2>Senior Player</h2>
+          <p class="text-center max-sm:w-3/4">Amet consectetur. Condimentum dignissim adipiscing .</p>
+         </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- performance stop -->
   </main>
   <!-- main stop -->
 
