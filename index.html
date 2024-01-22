@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <!-- header start -->
+  <header class="max-w-[1440px] w-4/5 mx-auto max-sm:w-[95%] ">
+    <div class="navbar bg-base-100 max-sm:justify-between">
+      <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+          </svg>
+        </div>
+        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+          <li><a>Home</a></li>
+          <li><a>About</a></li>
+          <li><a>Pages</a></li>
+          <li><a>Blog</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+      </div>
+      <div class="navbar-start max-sm:w-auto">
+
+        <a class="btn btn-ghost text-xl">daisyUI</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a>Home</a></li>
+          <li><a>About</a></li>
+          <li><a>Pages</a></li>
+          <li><a>Blog</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end max-sm:w-auto">
+        <div class="hidden lg:block">
+          <button class="btn btn-ghost btn-circle ">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </button>
+        </div>
+        <a class="btn">Button</a>
+      </div>
+    </div>
+  </header>
+  <!-- header stop -->
+  <!-- main start -->
+  <main class="max-w-[1440px] w-4/5 mx-auto max-sm:w-[95%] ">
+    <!-- carousel start -->
+    <section>
+      <div class="relative">
+        <div class="carousel w-full lg:h-[550px] h-[250px]">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg"
+              class="w-full object-cover bg-center " />
+            <div class="absolute flex lg:top-[80%] lg:left-10 top-[70%] left-1/2 max-sm:-translate-x-1/2">
+              <a href="#slide4" class="btn btn-circle lg:mr-5 mr-3">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg"
+              class="w-full object-cover bg-center" />
+            <div class="absolute flex lg:top-[80%] lg:left-10 top-[70%] left-1/2 max-sm:-translate-x-1/2">
+              <a href="#slide1" class="btn btn-circle  lg:mr-5 mr-3">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg"
+              class="w-full object-cover bg-center" />
+            <div class="absolute flex lg:top-[80%] lg:left-10 top-[70%] left-1/2 max-sm:-translate-x-1/2">
+              <a href="#slide2" class="btn btn-circle  lg:mr-5 mr-3">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg"
+              class="w-full object-cover bg-center" />
+            <div class="absolute flex lg:top-[80%] lg:left-10 top-[70%] left-1/2 max-sm:-translate-x-1/2">
+              <a href="#slide3" class="btn btn-circle  lg:mr-5 mr-3">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-black p-7 w-full lg:w-1/2 text-white absolute left-1/2 max-sm:mt-5 max-sm:-translate-x-1/2 lg:left-[48%] lg:top-[70%] rounded-xl ">
+          <h2>Meet all the heroes from the field</h2>
+          <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit
+            nullam proin. </p>
+        </div>
+      </div>
+    </section>
+    <!-- carousel stop -->
+  </main>
+  <!-- main stop -->
+
+</body>
+
+</html>
