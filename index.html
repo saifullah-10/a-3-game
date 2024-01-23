@@ -5,13 +5,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
+    body{
+      font-family: 'Manrope', sans-serif;
+    }
     .progress-ring__circle {
-
       transition: stroke-dashoffset 0.35s;
       transform: rotate(-90deg);
       transform-origin: 50% 50%;
@@ -21,8 +27,8 @@
 
 <body>
   <!-- header start -->
-  <header class="max-w-[1440px] w-4/5 mx-auto max-sm:w-[95%] ">
-    <div class="navbar bg-base-100 max-sm:justify-between">
+  <header class="max-w-[1440px] w-4/5 mx-auto max-sm:w-[95%] mt-5 ">
+    <div class="navbar bg-base-100 max-sm:justify-between ">
       <div class="dropdown">
         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -39,11 +45,11 @@
       </div>
       <div class="navbar-start max-sm:w-auto">
 
-        <a class="btn btn-ghost text-xl">daisyUI</a>
+        <a href="#"><img src="./images/Hockey’s.png" alt=""></a>
       </div>
       <div class="navbar-center hidden lg:flex">
-        <ul class="menu menu-horizontal px-1">
-          <li><a>Home</a></li>
+        <ul class="menu menu-horizontal px-1 text-base font-bold">
+          <li><a class="text-[#FF4240]">Home</a></li>
           <li><a>About</a></li>
           <li><a>Pages</a></li>
           <li><a>Blog</a></li>
@@ -60,7 +66,7 @@
             </svg>
           </button>
         </div>
-        <a class="btn">Button</a>
+        <a href="#" class="lg:py-3 lg:px-5 py-2 px-3 max-[370px]:text-[14px] text-[18px] bg-[#FF4240] rounded-xl lg:text-[20px] font-bold ml-3 text-white">Get Ticket</a>
       </div>
     </div>
   </header>
@@ -68,11 +74,11 @@
   <!-- main start -->
   <main class="max-w-[1440px] w-4/5 mx-auto max-sm:w-[95%] ">
     <!-- carousel start -->
-    <section>
+    <section class="mt-5">
       <div class="relative">
         <div class="carousel w-full lg:h-[550px] h-[250px] rounded-xl">
           <div id="slide1" class="carousel-item relative w-full">
-            <img src="https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg"
+            <img src="./images/1.png"
               class="w-full object-cover bg-center " />
             <div class="absolute flex lg:top-[80%] lg:left-10 top-[70%] left-1/2 max-sm:-translate-x-1/2">
               <a href="#slide4" class="btn btn-circle lg:mr-5 mr-3">❮</a>
@@ -80,7 +86,7 @@
             </div>
           </div>
           <div id="slide2" class="carousel-item relative w-full">
-            <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg"
+            <img src="./images/1.png"
               class="w-full object-cover bg-center" />
             <div class="absolute flex lg:top-[80%] lg:left-10 top-[70%] left-1/2 max-sm:-translate-x-1/2">
               <a href="#slide1" class="btn btn-circle  lg:mr-5 mr-3">❮</a>
@@ -88,7 +94,7 @@
             </div>
           </div>
           <div id="slide3" class="carousel-item relative w-full">
-            <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg"
+            <img src="./images/1.png"
               class="w-full object-cover bg-center" />
             <div class="absolute flex lg:top-[80%] lg:left-10 top-[70%] left-1/2 max-sm:-translate-x-1/2">
               <a href="#slide2" class="btn btn-circle  lg:mr-5 mr-3">❮</a>
@@ -96,7 +102,7 @@
             </div>
           </div>
           <div id="slide4" class="carousel-item relative w-full">
-            <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg"
+            <img src="./images/1.png"
               class="w-full object-cover bg-center" />
             <div class="absolute flex lg:top-[80%] lg:left-10 top-[70%] left-1/2 max-sm:-translate-x-1/2">
               <a href="#slide3" class="btn btn-circle  lg:mr-5 mr-3">❮</a>
@@ -106,20 +112,19 @@
         </div>
         <div
           class="bg-black p-7 w-full lg:w-1/2 text-white relative lg:absolute left-1/2 max-sm:mt-5 max-sm:-translate-x-1/2 lg:left-[48%] lg:top-[70%] rounded-xl ">
-          <h2>Meet all the heroes from the field</h2>
-          <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit
-            nullam proin. </p>
+          <h2 class="text-[18px] lg:text-2xl mb-2 font-extrabold">Welcome..... </h2>
+          <p class="text-[14px] lg:text-base font-medium leading-6 text-[#ffffff99]">In a short, Our next tournament will be come 3rd Feb 2024. There are 30 teams are participate in this tournament </p>
         </div>
       </div>
     </section>
     <!-- carousel stop -->
     <!-- performance start -->
-    <section class="mt-20">
+    <section class="lg:my-10 my-5">
       <div>
-        <div class="w-full border-y-2 border-dashed ">
+        <div class="w-full border-y-2 border-dashed lg:py-10 py-5 mb-10">
           <div class="flex flex-col items-center">
-            <h1 class="text-center">Professional Hockeys Club</h1>
-            <p class="text-center max-sm:w-4/5">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+            <h1 class="text-center text-[22px] lg:text-4xl font-extrabold text-[#131318]">Professional Hockeys Club</h1>
+            <p class="text-center max-sm:w-4/5 text-[14px] font-medium leading-6 text-[#13131899]">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
               placerat dolor. Purus urna in sit
               nullam proin. </p>
           </div>
@@ -135,11 +140,11 @@
                   style="stroke-dasharray: calc(220 + (87 * 2.5)), 400" stroke-width="10" stroke-linecap="round" cx="50"
                   cy="50" r="40" fill="transparent" stroke-dashoffset="calc(400 - (400 * 45) / 100)"></circle>
                 <text x="50" y="50" font-family="Verdana" font-size="12" text-anchor="middle"
-                  alignment-baseline="middle">87%</text>
+                  alignment-baseline="middle" class="text-xl font-extrabold">87%</text>
               </svg>
             </div>
-            <h2>Prayer Facility</h2>
-            <p class="text-center max-sm:w-3/4">Amet consectetur. Condimentum dignissim adipiscing .</p>
+            <h2 class="text-[20px] font-semibold my-4">Player Facility</h2>
+            <p class="text-center max-sm:w-3/4 text-[#13131899] text-base leading-6">Amet consectetur. Condimentum dignissim adipiscing .</p>
           </div>
           <div class=" flex flex-col items-center justify-center">
             <div class="relative w-40 h-40">
@@ -151,11 +156,11 @@
                   style="stroke-dasharray: calc(220 + (95 * 2.5)), 400" stroke-width="10" stroke-linecap="round" cx="50"
                   cy="50" r="40" fill="transparent" stroke-dashoffset="calc(400 - (400 * 45) / 100)"></circle>
                 <text x="50" y="50" font-family="Verdana" font-size="12" text-anchor="middle"
-                  alignment-baseline="middle">95%</text>
+                  alignment-baseline="middle" class="text-xl font-extrabold">95%</text>
               </svg>
             </div>
-            <h2>Experienced Coach</h2>
-            <p class="text-center max-sm:w-3/4">Amet consectetur. Condimentum dignissim adipiscing .</p>
+            <h2 class="text-[20px] font-semibold my-4">Experienced Coach</h2>
+            <p class="text-center max-sm:w-3/4 text-[#13131899] text-base leading-6">Amet consectetur. Condimentum dignissim adipiscing .</p>
           </div>
           <div class=" flex flex-col items-center justify-center">
             <div class="relative w-40 h-40">
@@ -167,11 +172,11 @@
                   style="stroke-dasharray: calc(220 + (90 * 2.5)), 400" stroke-width="10" stroke-linecap="round" cx="50"
                   cy="50" r="40" fill="transparent" stroke-dashoffset="calc(400 - (400 * 45) / 100)"></circle>
                 <text x="50" y="50" font-family="Verdana" font-size="12" text-anchor="middle"
-                  alignment-baseline="middle">90%</text>
+                  alignment-baseline="middle" class="text-xl font-extrabold">90%</text>
               </svg>
             </div>
-            <h2>Senior Player</h2>
-            <p class="text-center max-sm:w-3/4">Amet consectetur. Condimentum dignissim adipiscing .</p>
+            <h2 class="text-[20px] font-semibold my-4">Senior Player</h2>
+            <p class="text-center max-sm:w-3/4 text-[#13131899] text-base leading-6">Amet consectetur. Condimentum dignissim adipiscing .</p>
           </div>
           <div class=" flex flex-col items-center justify-center">
             <div class="relative w-40 h-40">
@@ -183,22 +188,22 @@
                   style="stroke-dasharray: calc(220 + (80 * 2.5)), 400" stroke-width="10" stroke-linecap="round" cx="50"
                   cy="50" r="40" fill="transparent" stroke-dashoffset="calc(400 - (400 * 45) / 100)"></circle>
                 <text x="50" y="50" font-family="Verdana" font-size="12" text-anchor="middle"
-                  alignment-baseline="middle">80%</text>
+                  alignment-baseline="middle" class="text-xl font-extrabold">80%</text>
               </svg>
             </div>
-            <h2>Training Ground</h2>
-            <p class="text-center max-sm:w-3/4">Amet consectetur. Condimentum dignissim adipiscing .</p>
+            <h2 class="text-[20px] font-semibold my-4">Training Ground</h2>
+            <p class="text-center max-sm:w-3/4 text-[#13131899] text-base leading-6">Amet consectetur. Condimentum dignissim adipiscing .</p>
           </div>
         </div>
       </div>
     </section>
     <!-- performance stop -->
     <!-- program start -->
-    <section class="my-20">
+    <section class="lg:my-10 my-5">
       <div>
         <div class="w-full border-y-2 border-dashed ">
           <div class="flex flex-col items-center">
-            <h1 class="text-center">Program Sections</h1>
+            <h1 class="text-center text-4xl">Program Sections</h1>
             <p class="text-center max-sm:w-4/5">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
               placerat dolor. Purus urna in sit
               nullam proin. </p>
@@ -246,11 +251,11 @@
     </section>
     <!-- program stop -->
     <!-- product start -->
-    <section class="my-10">
+    <section class="lg:my-10 my-5">
       <div class="flex flex-col items-center justify-center ">
         <div class="w-full border-y-2 border-dashed ">
           <div class="flex flex-col items-center">
-            <h1 class="text-center">Our New Products</h1>
+            <h1 class="text-center text-4xl">Our New Products</h1>
             <p class="text-center max-sm:w-4/5">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
               placerat dolor. Purus urna in sit
               nullam proin. </p>
@@ -418,11 +423,11 @@
     </section>
     <!-- product stop -->
     <!-- client start -->
-    <section class="my-10">
+    <section class="lg:my-10 my-5">
       <div>
         <div class="w-full border-y-2 border-dashed ">
           <div class="flex flex-col items-center">
-            <h1 class="text-center">Our New Products</h1>
+            <h1 class="text-center text-4xl">Our New Products</h1>
             <p class="text-center max-sm:w-4/5">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
               placerat dolor. Purus urna in sit
               nullam proin. </p>
@@ -491,11 +496,11 @@
     </section>
     <!-- client stop -->
     <!-- communication start -->
-    <section>
+    <section class="lg:my-10 my-5">
       <div>
         <div class="w-full border-y-2 border-dashed ">
           <div class="flex flex-col items-center">
-            <h1 class="text-center">Our New Products</h1>
+            <h1 class="text-center text-4xl">Our New Products</h1>
             <p class="text-center max-sm:w-4/5">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
               placerat dolor. Purus urna in sit
               nullam proin. </p>
@@ -537,14 +542,25 @@
             </label>
             <div class="lg:col-span-2">
               <label for="msg" class="block">Message</label>
-              <textarea class="textarea bg-[#13131808] focus:outline-none focus:border-none  w-full h-[23rem]" placeholder="Write your message" id="msg" ></textarea>
+              <textarea class="textarea bg-[#13131808] focus:outline-none focus:border-none  w-full h-[10rem] lg:h-[23rem]" placeholder="Write your message" id="msg" ></textarea>
             </div>
-            <input type="submit" value="Send Message" class="lg:col-span-2 bg-[#FF4240] rounded-xl">
+            <input type="submit" value="Send Message" class="lg:col-span-2 bg-[#FF4240] rounded-xl max-sm:p-3">
             </form>
           </div>
           <!-- footer -->
-          <div class="p-10 border">
-
+          <div class="mt-5">
+            <footer class="footer p-10 bg-[#13131808] text-neutral-content">
+               
+              <nav class="w-full place-items-center">
+                <header class=" text-black">Social</header> 
+                <div class="grid grid-flow-col gap-4">
+                  <a href="#" class="text-black text-2xl"><i class="fa-brands fa-x-twitter"></i></a>
+                  <a href="#" class="text-black text-2xl"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#" class="text-black text-2xl"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#" class="text-black text-2xl"><i class="fa-brands fa-github"></i></a>
+                </div>
+              </nav>
+            </footer>
           </div>
         </div>
       </div>
@@ -552,6 +568,53 @@
     <!-- communication stop -->
   </main>
   <!-- main stop -->
+  <!-- footer start  -->
+  <footer class="max-w-[1440px]  bg-[#131318] mx-auto lg:mt-10 mt-5 py-20 text-[#ffffff99]">
+<div class=" w-[85%] mx-auto max-sm:w-[95%] grid grid-cols-4 lg:gap-20 gap-10 max-sm:grid-cols-2 max-sm:place-items-center ">
+  <div class="max-sm:col-span-2 flex flex-col max-sm:items-center">
+    <h2>Get In Touch</h2>
+    <p class="max-sm:w-[70%] max-sm:text-center">Dit amet consectetur. Condimentum  adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+    <div class="flex items-center">
+      <img src="./images/footermsg.svg" alt="">
+      <p>hockeys@support.com</p>
+    </div>
+    <div class="flex items-center">
+      <img src="./images/footerphone.svg" alt="">
+      <p>(+62) 123-321-543</p>
+    </div>
+  </div>
+  <div class="max-sm:flex max-sm:flex-col max-sm:items-center">
+    <h2>Company</h2>
+    <ul class="max-sm:flex max-sm:flex-col max-sm:items-center">
+      <li><a href="#">About us</a></li>
+      <li><a href="#">Leadership</a></li>
+      <li><a href="#">Careers</a></li>
+      <li><a href="#">News & Article</a></li>
+      <li><a href="#">Legal Notice</a></li>
+    </ul>
+  </div>
+  <div class="max-sm:flex max-sm:flex-col max-sm:items-center">
+    <h2>Support</h2>
+    <ul class="max-sm:flex max-sm:flex-col max-sm:items-center">
+      <li><a href="#">Help Center</a></li>
+      <li><a href="#">FAQ</a></li>
+      <li><a href="#">Ticket Support</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </div>
+  <div class="max-sm:col-span-2 max-sm:flex max-sm:flex-col max-sm:items-center">
+    <h2>Services</h2>
+    <ul class="max-sm:flex max-sm:flex-col max-sm:items-center">
+      <li><a href="#">Academy</a></li>
+      <li><a href="#">Group Lesson</a></li>
+      <li><a href="#">Private Lesson</a></li>
+      <li><a href="#">Hockeys for kids</a></li>
+      <li><a href="#">Hockeys for Adult</a></li>
+    </ul>
+  </div>
+</div>
+  </footer>
+  <!-- footer stop -->
 
 </body>
 
